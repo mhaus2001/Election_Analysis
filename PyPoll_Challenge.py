@@ -1,17 +1,12 @@
 # -*- coding: UTF-8 -*-
-"""PyPoll Homework Challenge starter code."""
+"""PyPoll Homework Challenge."""
 
-# Add our dependencies that we will be using to achieve our goal of tally count.
-# The csv module implements classes to read and write tabular data in CSV format.
+# Add our dependencies 
 import csv
-
-# The os module provides a portable way of using operating system dependent functionality.
 import os
 
-# The os.path module implements some useful functions on pathnames.
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
-
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("Resources", "election_analysis.txt")
 
@@ -118,7 +113,7 @@ with open(file_to_save, "w") as txt_file:
         if (county_vote > largest_county_turnout_count) and (
             county_vote_percentage > largest_county_percentage
         ):
-            # True
+ 
             largest_county_turnout_count = county_vote
             largest_county_percentage = county_vote_percentage
             largest_county_turnout = county
